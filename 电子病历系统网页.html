@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .h{
+        width: 1500px;
+        height: 100px;
+    }
+    .h1{
+        margin-left: 500px;
+        height: 50px;
+        width: 600px;
+        border-radius: 10px;
+        color: black;
+        font-size: 50px;
+        font-family: 华文新魏;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .h2{
+        margin-left: 300px;
+        height: 50px;
+        width: 1000px;
+        border-radius: 10px;
+        color: black;
+        font-size: 50px;
+        font-family: 华文新魏;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rd{
+        height: 200px;
+        width: 270px;
+        font-size: 20px;
+        font-family: 微软雅黑;
+        position: absolute;
+    }
+    .rd li:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    .login{
+        height: 600px;
+        width: 1000px;
+        margin-left: 350px;
+        font-size: 22px;
+        position: fixed;
+        background-image: url("image/1.jpg");
+        background-size: cover;
+    }
+    input[type="text"]
+    {
+        width: 300px;
+        height: 50px;
+    }
+    input[type="password"]
+    {
+        width: 300px;
+        height: 50px;
+    }
+    input[type="checkbox"]
+    {
+        width: 20px;
+        height: 20px;
+    }
+    button[type="submit"]
+    {
+        width: 300px;
+        height: 50px;
+    }
+</style>
+<body>
+    <div class="h">
+        <div class="h1">电子病历</div>
+        <div class="h2">面向用户的应用系统</div>
+    </div>
+    <div class="rd">研发团队：
+        <ol>
+            <li>创作灵感及框架：</li>
+            <li>页面设计：</li>
+            <li>代码编写：</li>
+            <li>系统完善：</li>
+        </ol>
+    </div>
+    <div class="login">
+        <h1>Hospital Case System</h1>
+        <h2>用户注册</h2><hr>
+        <form action="">
+            姓名：
+            <input type="text" placeholder="请输入姓名：">
+            <br><br>
+            性别：
+            <label><input type="radio" name="sex">男</label>
+            <label><input type="radio" name="sex">女</label>
+            <br><br>
+            年龄：
+            <input type="text" placeholder="请输入年龄：">
+            <br><br>
+            密码：
+            <input type="password" placeholder="请输入密码：">
+            <br><br>
+            <label><input type="checkbox">我已仔细阅读并同意用户个人隐私保护协议</label>
+            <br>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</body>
+</html>
