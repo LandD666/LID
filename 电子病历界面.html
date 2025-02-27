@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电子病历系统</title>
+    <style>
+        .picture{
+            background-image: url("image/Hospital.png");
+            background-size: cover;
+            height: 900px;
+            width: 1700px;
+            opacity: 0.85;
+            z-index: -1;
+        }
+        .Head{
+            height: 150px;
+            width: 1500px;
+        }
+        .head{
+            width: 800px;
+            height: 150px;
+            margin-left: 450px;
+            border: 10px solid skyblue;
+            border-radius: 10px;
+            box-shadow:  0 0 2px 2px red,0 0 2px 4px darkorchid,0 0 6px 8px pink,0 0 6px 8px plum;;
+            font-size: 50px;
+            font-family: 华文新魏;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            animation: as 1.5s linear infinite;
+        }
+        .head:hover{
+            color: red;
+        }
+    .rd{
+        margin-left: 50px;
+        margin-top: 50px;
+        height: 200px;
+        width: 270px;
+        font-size: 25px;
+        font-family: 微软雅黑;
+        position: absolute;
+        font-weight: bold;
+    }
+    .rd li:hover{
+        color: red;
+        text-decoration: underline;
+    }
+    .cheat{
+        height: 250px;
+        width: 200px;
+        top: 10px;
+        right: 10px;
+        border: 2px solid yellow;
+        position: fixed;
+        font-size: 27px;
+        color: darkred;
+        font-family: 微软雅黑;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: up-down 1.5s ease-in-out infinite;
+        background-image: url("image/redpacket.jpg");
+        background-size: cover;
+    }
+    .box{
+        border: 5px solid lightpink;
+        height: 200px;
+        margin-left: 370px;
+        margin-top: 100px;
+        width: 1070px;
+        font-size: 27px;
+        font-family: 华文新魏;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        font-weight: 1000;
+    }
+    .box:hover{
+        transform: scale3d(1,1.5,1);
+    }
+    @keyframes as {
+            10%{
+                transform: rotate(2deg);
+            }
+            20%{
+                transform: rotate(-2deg);
+            }
+            30%{
+                transform: rotate(2deg);
+            }
+            40%{
+                transform: rotate(-2deg);
+            }
+            50%,100%{
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes up-down {
+            0% {
+        transform: translateY(0px);
+        }
+            20% {
+        transform: translateY(-24px);
+        }
+            40%,100% {
+        transform: translateY(0px);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="picture">
+        <div class="Head">
+            <div class="head">欢迎登录王氏集团开发的电子病历系统！</div>
+            <div class="cheat"><a href="https://jwxt.jit.edu.cn/">新用户注册领取福利</a></div>
+        </div>
+        <div class="rd">
+            研发团队：
+            <ol>
+                <li>创作灵感及框架：</li>
+                <li>页面设计：</li>
+                <li>代码编写：</li>
+                <li>系统完善：</li>
+            </ol>
+        </div>
+        <div class="box">
+            您还在为病急乱投医而烦恼吗？<br>
+            您还在为如何弘扬医德而忧愁吗？<br>
+            电子病历系统前来助您一臂之力！<br>
+            此电子病例由王氏集团倾心打造，面向广大医疗客户，帮助医生和患者快速查看病情和医疗信息<br>
+            如果您是医疗用户，可通过电子病历系统快速查找病患对症下药<br>
+            如果您是病患用户，可通过电子病例系统快速查找主治医师和医治之方<br>
+        </div>
+    </div>
+    <script>alert("注册成功!")</script>
+</body>
+</html>
